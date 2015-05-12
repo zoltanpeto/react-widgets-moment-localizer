@@ -16,7 +16,7 @@ module.exports = {
     default: 'lll',
     header: 'MMMM YYYY',
     footer: 'LL',
-    weekday: function(day, culture, localizer) {
+    weekday: function(day, culture) {
       return moment().locale(culture).weekday(day).format('dd')
     },
 
@@ -24,7 +24,7 @@ module.exports = {
     month: 'MMM',
     year: 'YYYY',
 
-    decade: function(date, culture, localizer)  {
+    decade: function(date, culture, localizer) {
       return localizer.format(date, 'YYYY', culture) 
         + ' - ' + localizer.format(endOfDecade(date), 'YYYY', culture)
     },
@@ -35,15 +35,15 @@ module.exports = {
     }
   },
 
-  firstOfWeek: function(culture){ 
+  firstOfWeek: function(culture) {
     return moment.localeData(culture).firstDayOfWeek()
   },
 
-  parse: function(value, format, culture){
+  parse: function(value, format, culture) {
     return moment(value, format).locale(culture).toDate()
   },
 
-  format: function(value, format, culture){
+  format: function(value, format, culture) {
     return moment(value).locale(culture).format(format)
   }
 }
