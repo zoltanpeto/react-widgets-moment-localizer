@@ -8,8 +8,4 @@
   },
   "author": "Jason Quense @monasticpanic",
   "license": "MIT",
-
-  "peerDependencies": {
-    "moment": "^2.8.1"
-  }
 }

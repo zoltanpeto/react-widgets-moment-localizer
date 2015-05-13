@@ -7,9 +7,10 @@ You can apply it by using the main module export, or the global object
 
 ```js
 var widgets = require('react-widgets') // or window.ReactWidgets
-  , momentAdapter = require('react-widgets-moment-adapter')
+  , moment require('moment')
+  , momentLocalizer = require('react-widgets-moment-adapter')
 
-widgets.configure.setDateLocalizer(momentAdapter);
+widgets.configure.setDateLocalizer(momentLocalizer(moment));
 
 //use the widgets
 
@@ -19,9 +20,10 @@ Or if you want to minimize the size of your build you can just require the confu
 
 ```js
 var configure = require('react-widgets/lib/configure')
-  , momentAdapter = require('react-widgets-moment-adapter')
+  , moment require('moment')
+  , momentLocalizer = require('react-widgets-moment-adapter');
 
-configure.setDateLocalizer(momentAdapter);
+configure.setDateLocalizer(momentLocalizer(moment));
 
 //use the widgets
 
