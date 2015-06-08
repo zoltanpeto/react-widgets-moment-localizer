@@ -1,5 +1,5 @@
 {
-  "name": "react-widgets-moment-adapter",
+  "name": "react-widgets-moment-localizer",
   "version": "1.0.0",
   "description": "A localization adapter for react-widgets using Momentjs",
   "main": "index.js",
@@ -7,5 +7,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jason Quense @monasticpanic",
-  "license": "MIT",
+  "license": "MIT"
 }

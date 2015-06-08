@@ -1,7 +1,7 @@
 
-A localization adapter for react-widgets using Momentjs.
+A date localization adapter for react-widgets using Momentjs. This _only_ handles date localization, if you plan on using the NumberPicker widget you will still need to include Globalize.js or some other number localizer.
 
-    npm install react-widgets-moment-adapter
+    npm install react-widgets-moment-localizer
 
 You can apply it by using the main module export, or the global object
 
