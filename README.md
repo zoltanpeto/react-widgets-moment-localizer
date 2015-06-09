@@ -7,7 +7,7 @@ You can apply it by using the main module export, or the global object
 
 ```js
 var widgets = require('react-widgets') // or window.ReactWidgets
-  , moment require('moment')
+  , moment = require('moment')
   , momentLocalizer = require('react-widgets-moment-localizer')
 
 widgets.configure.setDateLocalizer(momentLocalizer(moment));
@@ -16,11 +16,11 @@ widgets.configure.setDateLocalizer(momentLocalizer(moment));
 
 ```
 
-Or if you want to minimize the size of your build you can just require the confuration module
+Or if you want to minimize the size of your build you can just require the configuration module
 
 ```js
 var configure = require('react-widgets/lib/configure')
-  , moment require('moment')
+  , moment = require('moment')
   , momentLocalizer = require('react-widgets-moment-localizer');
 
 configure.setDateLocalizer(momentLocalizer(moment));
