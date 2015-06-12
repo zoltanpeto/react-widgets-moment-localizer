@@ -51,11 +51,11 @@ module.exports = function(moment){
     },
 
     parse: function(value, format, culture) {
-      return moment(value, format).locale(culture).toDate()
+      return (culture ? moment(value, format)[localField](culture) : moment(value, format)).toDate()
     },
 
     format: function(value, format, culture) {
-      return moment(value)[localField](culture).format(format)
+      return (culture ? moment(value)[localField](culture): moment(value)).format(format)
     }
   }
 }
