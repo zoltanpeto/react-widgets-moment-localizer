@@ -24,7 +24,7 @@ module.exports = function(moment){
     formats: {
       date: 'L',
       time: 'LT',
-      default: 'lll',
+      'default': 'lll',
       header: 'MMMM YYYY',
       footer: 'LL',
       weekday: function(day, culture) {
