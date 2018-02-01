@@ -1,6 +1,5 @@
 'use strict';
 
-
 module.exports = function(moment){
   if (typeof moment !== 'function')
     throw new TypeError('You must provide a valid moment object')
@@ -27,8 +26,8 @@ module.exports = function(moment){
       'default': 'lll',
       header: 'MMMM YYYY',
       footer: 'LL',
-      weekday: function(day, culture) {
-        return moment()[localField](culture).weekday(day).format('dd')
+      weekday: function(day) {
+        return moment(day).format('dd');
       },
 
       dayOfMonth: 'DD',
